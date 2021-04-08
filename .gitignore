@@ -1,0 +1,12 @@
+/work
+/target
+/.settings
+/.classpath
+/.project
+/.scannerwork
+
+# intellij idea files
+.idea
+*.iml
+
+.vscode

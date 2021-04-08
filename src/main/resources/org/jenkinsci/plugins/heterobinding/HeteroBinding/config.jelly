@@ -1,0 +1,21 @@
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:st="jelly:stapler">
+    <f:section title="${%Hetero Data Binding}">
+        <!-- <f:entry field="phones" title="${%Phones}">
+            <f:repeatableHeteroProperty
+                field="phones"
+                hasHeader="true"
+                addCaption="${%Add a new phone}"
+                deleteCaption="${%Delete phone}"
+            />
+        </f:entry> -->
+        <f:block>
+            <f:hetero-list
+                name="phones" hasHeader="true"
+                descriptors="${it.allPhones()}"
+                items="${it.phones}"
+                addCaption="${%Add a new phone}"
+                deleteCaption="${%Delete phone}"
+            />
+        </f:block>
+    </f:section>
+</j:jelly>
